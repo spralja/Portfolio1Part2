@@ -27,10 +27,18 @@ class RectangleTest {
     }
 
     @Test
+    public void getCenter03() {
+        Rectangle rectangle = new Rectangle(2.0, 2.0, 1.0, 1.0);
+        assertTrue(rectangle.getCenter().equals(new Point(1.5, 1.5)));
+    }
+
+    @Test
     public void getArea00() {
         Rectangle rectangle = new Rectangle();
         assertTrue(equalsWithinOffset(rectangle.getArea(), 0.0));
     }
+
+
 
     @Test
     public void getArea01() {
@@ -53,6 +61,12 @@ class RectangleTest {
     @Test
     public void getArea04() {
         Rectangle rectangle = new Rectangle(1.0, 1.0, 2.0, 3.0);
+        assertTrue(equalsWithinOffset(rectangle.getArea(), 2.0));
+    }
+
+    @Test
+    public void getArea05() {
+        Rectangle rectangle = new Rectangle(2.0, 3.0, 1.0, 1.0);
         assertTrue(equalsWithinOffset(rectangle.getArea(), 2.0));
     }
 
@@ -83,6 +97,12 @@ class RectangleTest {
     @Test
     public void getCircumference05() {
         Rectangle rectangle = new Rectangle(1.0, 1.0, 2.0, 2.0);
+        assertTrue(equalsWithinOffset(rectangle.getCircumference(), 4.0));
+    }
+
+    @Test
+    public void getCircumference06() {
+        Rectangle rectangle = new Rectangle(2.0, 2.0, 1.0, 1.0);
         assertTrue(equalsWithinOffset(rectangle.getCircumference(), 4.0));
     }
 

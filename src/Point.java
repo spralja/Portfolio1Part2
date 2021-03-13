@@ -25,11 +25,17 @@ public class Point {
     }
 
     public boolean equals(Point that) {
-        return false;
+        return (this.x == that.x && this.y == that.y);
     }
 
     @Override
     public String toString() {
-        return null;
+       StringBuilder string = new StringBuilder();
+       string.append("(");
+       string.append(x);
+       string.append(", ");
+       string.append(y);
+       string.append(")");
+       return string.toString();
     }
 }

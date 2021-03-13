@@ -21,7 +21,7 @@ public class Point {
     }
 
     public double distanceTo(Point that) {
-        return 0.0;
+        return Math.sqrt(Math.pow(that.x - this.x, 2.0) + Math.pow(that.y - this.y, 2.0));
     }
 
     public boolean equals(Point that) {

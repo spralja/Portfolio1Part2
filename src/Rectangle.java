@@ -17,7 +17,7 @@ public class Rectangle extends Shape{
         this.a = that.a;
         this.b = that.b;
     }
-    
+
     @Override
     public Point getCenter() {
         return null;

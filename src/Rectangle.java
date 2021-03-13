@@ -30,7 +30,7 @@ public class Rectangle extends Shape{
 
     @Override
     public double getCircumference() {
-        return 0;
+        return 2.0 * (Math.abs(a.getX() - b.getX()) + Math.abs(a.getY() - b.getY()));
     }
 
     @Override

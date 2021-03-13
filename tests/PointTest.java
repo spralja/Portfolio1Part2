@@ -8,14 +8,14 @@ class PointTest {
         return (d1 + 0.1 >= d2 && d1 - 0.1 <= d2);
     }
     @Test
-    public void distance00() {
+    public void distanceTo00() {
         Point p1 = new Point();
         Point p2 = new Point();
         assertTrue(equalsWithinOffset(p1.distanceTo(p2), 0.0));
     }
 
     @Test
-    public void distance01() {
+    public void distanceTo01() {
         Point p1 = new Point();
         Point p2 = new Point(1.0, 1.0);
         assertTrue(equalsWithinOffset(p1.distanceTo(p2), Math.sqrt(2.0)));

@@ -7,6 +7,7 @@ class PointTest {
     private static boolean equalsWithinOffset(double d1, double d2) {
         return (d1 + 0.1 >= d2 && d1 - 0.1 <= d2);
     }
+    
     @Test
     public void distanceTo00() {
         Point p1 = new Point();

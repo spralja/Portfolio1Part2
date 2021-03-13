@@ -25,7 +25,7 @@ public class Rectangle extends Shape{
 
     @Override
     public double getArea() {
-        return 0;
+        return Math.abs((a.getX() - b.getX()) * (a.getY() - b.getY()));
     }
 
     @Override

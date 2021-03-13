@@ -35,7 +35,12 @@ public class Rectangle extends Shape{
 
     @Override
     public boolean isInside(Point point) {
-        return false;
+        if(point.getX() <= a.getX() && point.getX() <= b.getX()) return false;
+        if(point.getX() >= a.getX() && point.getX() >= b.getX()) return false;
+        if(point.getY() <= a.getY() && point.getY() <= b.getY()) return false;
+        if(point.getY() >= a.getY() && point.getY() >= b.getY()) return false;
+
+        return true;
     }
 
     @Override

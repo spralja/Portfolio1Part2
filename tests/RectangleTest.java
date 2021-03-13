@@ -77,31 +77,31 @@ class RectangleTest {
     }
 
     @Test
-    public void getCircumference02() {
+    public void getCircumference01() {
         Rectangle rectangle = new Rectangle(0.0, 0.0, 1.0, 1.0);
         assertTrue(equalsWithinOffset(rectangle.getCircumference(), 4.0));
     }
 
     @Test
-    public void getCircumference03() {
+    public void getCircumference02() {
         Rectangle rectangle = new Rectangle(0.0, 0.0, 1.0, 2.0);
         assertTrue(equalsWithinOffset(rectangle.getCircumference(), 6.0));
     }
 
     @Test
-    public void getCircumference04() {
+    public void getCircumference03() {
         Rectangle rectangle = new Rectangle(1.0, 1.0, 2.0, 3.0);
         assertTrue(equalsWithinOffset(rectangle.getCircumference(), 6.0));
     }
 
     @Test
-    public void getCircumference05() {
+    public void getCircumference04() {
         Rectangle rectangle = new Rectangle(1.0, 1.0, 2.0, 2.0);
         assertTrue(equalsWithinOffset(rectangle.getCircumference(), 4.0));
     }
 
     @Test
-    public void getCircumference06() {
+    public void getCircumference05() {
         Rectangle rectangle = new Rectangle(2.0, 2.0, 1.0, 1.0);
         assertTrue(equalsWithinOffset(rectangle.getCircumference(), 4.0));
     }

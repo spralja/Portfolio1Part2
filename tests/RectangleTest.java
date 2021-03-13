@@ -133,14 +133,7 @@ class RectangleTest {
         Point point = new Point(1.5, 1.5);
         assertTrue(!rectangle.isInside(point));
     }
-
-    @Test
-    public void distanceTo00() {
-        Rectangle r1 = new Rectangle();
-        Rectangle r2 = new Rectangle();
-        assertTrue(equalsWithinOffset(r1.distanceTo(r2), 0.0));
-    }
-
+    
     @Test
     public void equals00() {
         Rectangle r1 = new Rectangle();

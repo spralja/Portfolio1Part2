@@ -20,7 +20,7 @@ public class Rectangle extends Shape{
 
     @Override
     public Point getCenter() {
-        return null;
+        return new Point(a.getX() + (b.getX() - a.getX()) / 2.0, a.getY() + (b.getY() - a.getY()) / 2.0);
     }
 
     @Override

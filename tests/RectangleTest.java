@@ -142,27 +142,6 @@ class RectangleTest {
     }
 
     @Test
-    public void distanceTo01() {
-        Rectangle r1 = new Rectangle(0.0, 0.0, 1.0, 1.0);
-        Rectangle r2 = new Rectangle(1.0, 1.0, 2.0, 2.0);
-        assertTrue(equalsWithinOffset(r1.distanceTo(r2), Math.sqrt(2.0)));
-    }
-
-    @Test
-    public void distanceTo02() {
-        Rectangle r1 = new Rectangle(1.0, 1.0, 2.0, 2.0);
-        Rectangle r2 = new Rectangle(2.0, 2.0, 3.0, 3.0);
-        assertTrue(equalsWithinOffset(r1.distanceTo(r2), Math.sqrt(2.0)));
-    }
-
-    @Test
-    public void distanceTo03() {
-        Rectangle r1 = new Rectangle(0.0, 0.0, 1.0, 1.0);
-        Rectangle r2 = new Rectangle(1.0, 0.0, 2.0, 1.0);
-        assertTrue(equalsWithinOffset(r1.distanceTo(r2), Math.sqrt(1.0)));
-    }
-
-    @Test
     public void equals00() {
         Rectangle r1 = new Rectangle();
         Rectangle r2 = new Rectangle();

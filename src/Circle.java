@@ -25,20 +25,20 @@ public class Circle extends Shape{
 
     @Override
     public double getArea() {
-        return 0;
+        return Math.PI * Math.pow(r, 2.0);
     }
 
     @Override
     public double getCircumference() {
-        return 0;
+        return 2.0 * Math.PI * r;
     }
 
     @Override
     public boolean isInside(Point point) {
-        return false;
+        return (c.distanceTo(point) < r);
     }
 
     public boolean equals(Circle that) {
-        return false;
+        return (this.c.equals(that.c) && this.r == that.r);
     }
 }

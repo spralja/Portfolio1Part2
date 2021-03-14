@@ -133,7 +133,7 @@ class RectangleTest {
         Point point = new Point(1.5, 1.5);
         assertTrue(!rectangle.isInside(point));
     }
-    
+
     @Test
     public void equals00() {
         Rectangle r1 = new Rectangle();

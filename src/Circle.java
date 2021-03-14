@@ -17,10 +17,10 @@ public class Circle extends Shape{
         this.c = that.c;
         this.r = r;
     }
-    
+
     @Override
     public Point getCenter() {
-        return null;
+        return this.c;
     }
 
     @Override

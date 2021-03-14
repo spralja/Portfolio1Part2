@@ -24,25 +24,33 @@ public class Triangle extends Shape{
 
     @Override
     public Point getCenter() {
-        return null;
+        return new Point((a.getX() + b.getX() + c.getX()) / 3.0, (a.getY() + b.getY() + c.getY()) / 3.0);
     }
 
     @Override
     public double getArea() {
-        return 0;
+        return Math.abs((a.getX() * (b.getY() - c.getY()) + b.getX() * (c.getY() - a.getY()) + c.getX() *
+                (a.getY() - b.getY())) / 2.0);
     }
 
     @Override
     public double getCircumference() {
-        return 0;
+        return a.distanceTo(b) + b.distanceTo(c) + c.distanceTo(a);
     }
 
     @Override
     public boolean isInside(Point point) {
-        return false;
+        Triangle t1 = new Triangle(point, a, b);
+        Triangle t2 = new Triangle(point, b, c);
+        Triangle t3 = new Triangle(point, a, c);
+        double A1 = t1.getArea();
+        double A2 = t2.getArea();
+        double A3 = t3.getArea();
+        double A = this.getArea();
+        return (A1 + A2 + A3 + 0.1 >= A && A1 + A2 + A3 - 0.1 <= A);
     }
 
     public boolean equals(Triangle that) {
-        return false;
+        return (this.a == that.a && this.b == that.b && this.c == that.c);
     }
 }

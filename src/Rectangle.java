@@ -43,8 +43,7 @@ public class Rectangle extends Shape{
         return true;
     }
 
-    @Override
-    public boolean equals(Shape that) {
-        return false;
+    public boolean equals(Rectangle that) {
+        return (this.a.equals(that.a) && this.b.equals(that.b));
     }
 }

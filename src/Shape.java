@@ -7,6 +7,4 @@ public abstract class Shape {
     public double distanceTo(Shape that) {
         return this.getCenter().distanceTo(that.getCenter());
     }
-
-    public abstract boolean equals(Shape that);
 }

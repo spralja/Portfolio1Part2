@@ -1,2 +1,1 @@
-# shapeModel
- Implemntation of a shape model for my Software Development course at Roskilde University
+# Portfolio 1 Part2
